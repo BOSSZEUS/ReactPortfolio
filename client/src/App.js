@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Home from './components/Home'
 import Resume from './components/Resume'
 import Links from './components/Links'
+import Error from './components/Error'
 
 import { BrowserRouter as 
   Router, 
@@ -19,6 +20,7 @@ class App extends Component {
             <Route path='/'component={Home} exact />
             <Route path='/resume'component={Resume} />
             <Route path='/links'component={Links} />
+            <Route component={Error}/>
           </Switch>
         </div>
       </Router>
